@@ -12,4 +12,4 @@ https://thetechjournal.github.io/quiz-master/
 * Calculates total score based on right/wrong answers.
 * Displays a Congratulations/Sorry message based on user score.
 * Fully responsive. Built with html, CSS & vanilla JS.
-* Credit: Using [Freepik](<a href="https://www.freepik.com/vectors/background">Background vector created by freepik - www.freepik.com</a>) for background vector image
+* Credit: Using [background vector created by freepik](https://www.freepik.com/vectors/background) as app background image.
