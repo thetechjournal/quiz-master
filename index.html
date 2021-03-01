@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/quiz.css">
+    <title>Quiz Master</title>
+</head>
+<body>
+    <div class="container">
+        <div class="site-title">
+            <h1>Quiz Master</h1>
+        </div>
+
+        <div id="settings" class="settings card">
+            <h2>Setting up Quiz</h2>
+            <div class="box">
+                <form id="quiz-settings" action="#" method="post">
+                    <label>
+                        First Name: 
+                        <input type="text" name="name" id="name" class="name" required>
+                    </label>
+                    </br>
+                    <label>
+                        Quiz Category: 
+                        <select class="category" id="select-category">
+                            <option>General Knowledge</option>
+                            <option>Computer</option>
+                            <option>History</option>
+                            <option>Video Games</option>
+                        </select>
+                    </label>
+                    </br>
+                    <label>
+                        Difficulty Level: 
+                        <select class="difficulty" id="difficulty">
+                            <option>Easy</option>
+                            <option>Medium</option>
+                            <option>Hard</option>
+                        </select>
+                    </label> 
+                    </br>
+                    <label>
+                        Total Questions: 
+                        <input type="number" name="quantity" id="quantity" value="5" class="total" min="1" max="25">
+                    </label>
+                    </br>
+                <button type="submit" class="btn btn-start">Start Quiz</button>
+                </form>
+            </div> <!-- box div ends -->
+        </div> <!-- settings div ends -->
+
+        <div id="questions" class="questions card" hidden>
+            <div id="loader"></div>
+            <div id="quiz" class="justify-center flex-column hidden" >
+                <div id="hud">
+                    <div id="hud-item">
+                      <p class="hud-prefix">
+                        Question
+                      </p>
+                      <h2 class="hud-main-text" id="question-counter"></h2>
+                    </div>
+                    <div id="hud-item">
+                      <p class="hud-prefix">
+                        Score
+                      </p>
+                      <h2 class="hud-main-text" id="score"></h2>
+                    </div>
+                </div> <!-- hud div ends -->
+
+                <h2 id="question">Choose the answer for this question. Choose the answer for this question</h2>
+                <div class="choice-container">
+                    <p class="choice-prefix">A</p>
+                    <p class="choice-text" data-number="1"></p>
+                </div>
+                <div class="choice-container">
+                    <p class="choice-prefix">B</p>
+                    <p class="choice-text" data-number="2"></p>
+                </div>
+                <div class="choice-container">
+                    <p class="choice-prefix">C</p>
+                    <p class="choice-text" data-number="3"></p>
+                </div>
+                <div class="choice-container">
+                    <p class="choice-prefix">D</p>
+                    <p class="choice-text" data-number="4"></p>
+                </div>
+                <div class="correct-answer" id="correct-answer" hidden>
+                    <p>Correct answer: <span id="answer">a</span></p>
+                </div>
+                <div id="progressBar">
+                    <div id="progressBarIndicator"></div>
+                </div>
+
+            </div> <!-- quiz div ends -->
+        </div> <!-- questions div ends -->
+
+        <div id="result" class="result card" hidden>
+            <div class="finish">
+                <h2>Hello, <span id="user-name"></span></h2>
+                <h2 >Your total Score: <span id="finish-score"></span></h2>
+                <img id="img-finish"/>
+            </div>
+            <button id="btn-restart" class="btn">Restart</button>
+        </div>
+    </div> <!-- container div ends -->
+
+    <script src="./index.js"></script>
+</body>
+</html>

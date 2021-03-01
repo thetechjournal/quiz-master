@@ -1,0 +1,244 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+    /* background-color: #f6ff52; */
+    /* background-image: url('../images/pattern3.jpg'); */
+    background: linear-gradient(#f9f107, transparent 0%),
+    linear-gradient(0deg, rgb(28, 41, 138), transparent 30%),
+    #3b94c7 url("../images/pattern3.jpg") no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    color:rgb(13, 70, 175);
+}
+
+h1 {
+    margin: 0;
+    width: 300px;
+    text-align: center;
+    background-color: rgb(247, 211, 11);
+    border-radius: 15px;
+    padding: 15px;
+    color:rgb(13, 70, 175);
+}
+
+.finish {
+    margin: 0;
+    /* width: 300px; */
+    text-align: center;
+    background-color: rgb(247, 211, 11);
+    border-radius: 15px;
+    padding: 15px;
+    color:rgb(13, 70, 175);
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 50rem;
+    margin: 0 auto;
+  }
+
+
+.card {
+    max-width: 800px;
+    /* max-height: 400px; */
+    text-align: center;
+    border-radius: 25px;
+    padding: 2em;
+
+}
+
+.settings {
+    background-color: rgb(247, 211, 11);
+    padding-top: 1em;
+    margin: 1.5em;
+}
+
+.box {
+    text-align: left;
+    margin-top: 2.5em;
+    padding-right: 2em;
+    padding-left: 2em;
+    /* border:2px solid magenta; */
+}
+
+/* input, select {
+    margin-left: 2em;
+} */
+
+label {
+    font-weight: bold;
+}
+
+.name {
+    margin-left: 4.9em;
+    margin-bottom: 1em;
+    padding: 0.3em;
+}
+
+.category {
+    margin-left: 2.8em;
+    margin-bottom: 1em;
+    width: 157px;
+    padding: 0.3em;
+
+}
+
+.total {
+    margin-left: 1.9em;
+    margin-bottom: 1em;
+    width: 156px;
+    padding: 0.3em;
+}
+
+.difficulty {
+    margin-left: 2.4em;
+    margin-bottom: 1em;
+    width: 157px;
+    padding: 0.3em;
+
+}
+
+.questions {
+    background-color: rgb(242, 242, 242);
+    /* background-color: rgb(247, 211, 11);; */
+    padding-top: 1em;
+    margin: 1.5em;
+}
+
+.result {
+    background-color:rgb(237, 237, 237);
+    /* background-image: linear-gradient(white, rgb(255,168,0)); */
+    padding-top: 1em;
+    margin: 1.5em;
+}
+
+.btn {
+    font-size: 1.1rem;
+    padding: 0.8rem 0;
+    width: 10rem;
+    text-align: center;
+    border: 0.1rem solid rgb(42, 72, 209);
+    margin: 2rem;
+    text-decoration: none;
+    color: white;
+    background-color: rgb(42, 72, 209);
+}
+
+.btn:hover {
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(86, 185, 235, 0.5);
+    transform: translateY(-0.1rem);
+    transition: transform 150ms;
+    background-color: white;
+    color: rgb(42, 72, 209);
+    font-weight: bold;
+}
+
+.btn-start {
+    margin-left: 4em;
+}
+ 
+#loader {
+    border: 16px solid #f3f3f3; /* Light grey */
+    border-top: 16px solid rgb(42, 72, 209); /* Blue */
+    border-right: 16px solid rgb(247, 211, 11); /* Blue */
+    border-bottom: 16px solid rgb(42, 72, 209); /* Blue */
+    border-left: 16px solid rgb(247, 211, 11); /* Blue */
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    animation: spin 2s linear infinite;
+    margin-left: 10em;
+
+  }
+  
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.quiz-btn {
+    padding: 13px 25px;
+    background-color: rgb(33, 33, 231);
+    color: white;
+    margin-bottom: 25px;
+    text-decoration: none;
+}
+
+#quiz-buttons {
+    padding: 2.5em 0;
+}
+
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+  
+.flex-center {
+justify-content: center;
+align-items: center;
+}
+
+
+#progressBar {
+    width: 27rem;
+    height: 2rem;
+    border: 0.3rem solid rgb(42, 72, 209);
+    margin-top: 1.5rem;
+    }
+    
+#progressBarIndicator {
+height: 1.4rem;
+background-color: rgb(247, 211, 11);
+width: 0%;
+}
+
+
+
+@media (min-width: 800px) {
+    body {
+        font-size: 1.125rem;
+    }
+
+    .box{
+        margin-left: 1em;
+    }
+
+    .result {
+        display: none;
+    }
+
+    .questions {
+        width: 800px;
+    }
+
+    .result {
+        width: 600px;
+    }
+
+    #progressBar {
+        width: 45.5rem;
+      
+    }
+
+    #loader {
+        margin-left: 18em;
+    }
+
+    
+}
+
+    
+  
+
+
